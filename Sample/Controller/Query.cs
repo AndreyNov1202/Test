@@ -21,16 +21,24 @@ namespace Sample.Controller
             bufferTable = new DataTable();
         }
 
-        public DataTable UpdatePersonOVC()
+        public DataTable UpdateKBB()
         {
             connection.Open();
-            dataAdapter = new OleDbDataAdapter("SELECT * FROM таблица1 WHERE ([тип РЭС] = 'ОВЦ')", connection);
+            dataAdapter = new OleDbDataAdapter("SELECT * FROM таблица1 WHERE ([Тип РЭС] = 'КББ')", connection);
             bufferTable.Clear();
             dataAdapter.Fill(bufferTable);
             connection.Close();
             return bufferTable;
         }
-
+        public DataTable UpdateOVC()
+        {
+            connection.Open();
+            dataAdapter = new OleDbDataAdapter("SELECT * FROM таблица1 WHERE ([Тип РЭС])= 'ОВЦ' OR ([Тип РЭС])='ОВЦ, УО'", connection);
+            bufferTable.Clear();
+            dataAdapter.Fill(bufferTable);
+            connection.Close();
+            return bufferTable;
+        }
         public DataTable UpdatePersonKBB()
         {
             connection.Open();

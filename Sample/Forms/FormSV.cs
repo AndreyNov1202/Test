@@ -26,13 +26,15 @@ namespace Sample.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = controller.UpdatePersonOVC();
+            dataGridView1.DataSource = controller.UpdateOVC();
+            OVC Check = new OVC();
+            Check.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = controller.UpdatePersonKBB();
+            dataGridView1.DataSource = controller.UpdateKBB();
             KBB Check = new KBB();
             Check.Show();
             

@@ -209,5 +209,10 @@ namespace Sample
         {
             if (e.KeyCode == Keys.Enter) pictureBox2_Click( sender, e);
         }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Работы выполнил курсант 123 учебной группы рядовой НОвосёлов А.В.");
+        }
     }
 }

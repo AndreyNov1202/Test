@@ -9,24 +9,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
 namespace Sample.Forms
 {
-    public partial class KBB : Form
+    public partial class OVC : Form
     {
 
         private Random random;
         private int tempIndex;
         private Form activeForm;
         Query controller;
-        public KBB()
+        public OVC()
         {
+             
             InitializeComponent();
             random = new Random();
             controller = new Query(ConnectionString.ConnStr);
-            dataGridView1.DataSource = controller.UpdateKBB();
+            dataGridView1.DataSource = controller.UpdateOVC();
+        
+       
         }
 
+        private void OVC_Load(object sender, EventArgs e)
+        {
+
+        }
         private void textBox4_MouseHover(object sender, EventArgs e)
         {
             toolTip1.SetToolTip(textBox4, "Название РЭС по значениям поиска");
@@ -39,7 +45,7 @@ namespace Sample.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = controller.UpdateKBB();
+            dataGridView1.DataSource = controller.UpdateOVC();
 
             double? frequency = null;
             double? range = null;
@@ -160,3 +166,6 @@ namespace Sample.Forms
         }
     }
 }
+
+    
+

@@ -56,12 +56,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Formadd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Formadd.Designer.cs">
-      <DependentUpon>Formadd.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,14 +74,17 @@
     <Compile Include="Forms\KBB.Designer.cs">
       <DependentUpon>KBB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OVC.Designer.cs">
+      <DependentUpon>OVC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Formadd.resx">
-      <DependentUpon>Formadd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
@@ -97,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KBB.resx">
       <DependentUpon>KBB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OVC.resx">
+      <DependentUpon>OVC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
